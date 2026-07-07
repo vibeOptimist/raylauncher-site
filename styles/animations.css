@@ -1,0 +1,33 @@
+main {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  filter: blur(20px);
+  animation: ani 1.2s ease-in-out forwards;
+}
+
+@keyframes ani {
+  0% {
+    background-color: black;
+    opacity: 0;
+    filter: blur(20px);
+  }
+  100% {
+    background-color: none;
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.main-word::after {
+    content: "Бесплатный";
+    animation: changeText 12s infinite;
+}
+
+@keyframes changeText {
+    0%, 20% { content: "Бесплатный"; }
+    21%, 41% { content: "Красивый"; }
+    42%, 63% { content: "Удобный"; }
+    64%, 85% { content: "Быстрый"; }
+    86%, 99% { content: "Ваш"; }
+}

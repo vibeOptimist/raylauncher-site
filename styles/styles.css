@@ -1,0 +1,223 @@
+body {
+    color: white;   
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    background-color: #090a0b;
+
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        radial-gradient(circle at 80% 20%, rgba(197, 40, 171, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 10% 80%, rgba(45, 95, 168, 0.15) 0%, transparent 50%);
+    
+    background-size: 40px 40px, 40px 40px, auto, auto;
+    background-attachment: fixed;
+}
+
+header {
+    z-index: 100;
+    width: 66%;
+    padding: 10px;
+    padding: 12px 24px;
+    justify-content: center; 
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 24px;
+    border: 1px solid #3d486b80;
+    background-color: rgba(17, 23, 39, 0.7);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    display: flex; 
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    margin: 10px;
+}
+
+nav {
+    display: flex; 
+    gap: 16px; 
+}
+
+nav a {
+    font-size: 20px;
+}
+
+h1 {
+    display: block;
+    justify-self: center; 
+    text-align: center;
+    line-height: 60px;
+    font-size: 2.5em;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    padding: 80px;
+}
+
+h3 {
+    color: aqua;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.telegram, .download {
+    background-color: rgb(19, 69, 110);
+    border-radius: 8px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+main {
+    margin-top: 100px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    justify-content: end;
+    background-color: #222a4736;
+    border-radius: 10px;
+    border: 1px solid #bbbbbb11;
+}
+
+.main-image {
+    width: 800px;
+    display: flex;
+    justify-self: center; 
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 11px 70px rgba(36, 36, 36, 0.3);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.sec {
+    padding: 80px;
+}
+
+.sec h3 {
+    font-size: 2.5em;
+}
+
+.sec p {
+    font-size: 1.5em;
+    width: 700px;
+}
+
+.color-text {
+    color: rgb(17, 156, 156);
+}
+
+.buttons {
+    color: azure;
+    display: flex;
+    justify-self: center; 
+    gap: 14px;
+    margin: 20px;
+}
+
+.buttons a {
+    font-size: 20px;
+}
+
+.download {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(32, 136, 196);
+    transition: 0.4s;
+}
+
+.download::before {
+    content: "";
+    background-image: url("/images/png/windows.png");
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+.download:hover {
+    background-color: rgb(39, 151, 216);
+    transform: scale(90%);
+}
+
+.telegram {
+    background: transparent;
+    border: 2px solid rgb(108, 104, 104);
+        transition: 0.4s;
+}
+
+.telegram:hover {
+    transform: scale(90%);
+}
+
+.langs a img {
+    width: 30px;
+    border-radius: 10px;
+    border: 2px solid #1b0032;
+}
+
+.main-word {
+    border-radius: 8px;
+    display: inline-block;
+    padding: 8px;
+    background: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #1a9fa8, #1a5fa8);
+}
+
+a:hover {
+    color: #43dbe6;
+    transition: 0.4s;
+}
+
+.telegram:hover, .download:hover {
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.section-image {
+    width: 800px;
+    border: 2px solid white;
+    border-radius: 16px;
+}
+
+details {
+    background-color: #32415234;
+    padding: 10px;
+    width: 80%;
+    justify-self: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.foot {
+    margin-top: 10px;
+    padding: 10px;
+}
